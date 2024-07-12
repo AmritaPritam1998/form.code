@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div class="amrita">
+        <h2>Registration Form</h2>
+        <form action="/"method=post>
+           <div class="form-group">
+            <label for="first name">First Name</label>
+            <input placeholder="enter a first name"type="text"id="first name"name="first name">
+            <label for="last name">last Name</label>
+            <input placeholder="enter a last name"type="text"id="last name"name="last name"></br>
+           </br>
+            <label for="email id">Email Id</label>
+            <input type="email"id="email"name="email">
+            <label for="password">password</label>
+            <input type="password"id="password"name="password"required></br></br>
+            <label>Gender</label>
+            <div class="radiogroup">
+                <label>
+                    <input type="radio"name="gender"value="male">Male
+                </label>
+                <label>
+                    <input type="radio"name="gender"value="female">Female
+                </label>
+                <label>
+                    <input type="radio"name="gender"value="others">Others
+                </label></br>
+                 </br>
+                <label>Hobbies</label>
+                <div class="ckeckbox group">
+                    <label>
+                        <input type="checkbox"name="hobbies"value="reading">reading
+                    </label>
+                    <label>
+                        <input type="checkbox"name="hobbies"value="coding">coding
+                    </label>
+                    <label>
+                        <input type="checkbox"name="hobbies"value="Writing">Writing
+                    </label>
+                    <label>
+                        <input type="checkbox"name="hobbies"value="Running">Running
+                    </label></br>
+                     </br>
+                    <label for="country">country:
+                        <select name="country"id="country"required>
+                            <option value="">select your country></option>
+                            <option value="us">United State</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="in">India</option>
+                            <option value="fr">France</option>
+
+                        </select>
+                    </label></br>
+                     </br>
+                    <label for="bio">Bio:
+                        <textarea name="bio" id="bio"placeholder="tell us about yourself"></textarea>
+                    </label><br><br>
+                    <label>
+                        <button type="submit">Register</button>
+                    </label>
+
+
+                </div>
+            </div>
+
+           </div>
+        </form>
+    </div>
+    </form>
+</body>
+</html>
