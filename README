@@ -1,0 +1,206 @@
+<!-- HTML -->
+ <!-- -HTML stands for Hyper Text Markup Language-
+HTML is the standard markup language for creating Web pages.HTML describes the structure of a Web page.HTML consists of a series of elements.HTML elements tell the browser how to display the content.HTML elements label pieces of content such as 
+"this is a heading", "this is a paragraph", "this is a link", etc. -->
+<!-- The <!DOCTYPE html> declaration defines that this document is an HTML5 document.
+The <html> element is the root element of an HTML page.
+The <head> element contains meta information about the HTML page
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading
+The <p> element defines a paragraph -->
+<!-- Html element -->
+<!-- an html element is defined by a start tag ,some content and 
+an end tag. -->
+<!-- <tagname>Content goes here...</tagname> -->
+
+<!--Html attributes-->
+<!-- Attributes usually come in name/value pairs like: name="value" -->
+ All HTML elements can have attributes
+The href attribute of <a> specifies the URL of the page the link goes to.
+The src attribute of <img> specifies the path to the image to be displayed.
+The width and height attributes of <img> provide size information for images.
+The alt attribute of <img> provides an alternate text for an image.
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+The lang attribute of the <html> tag declares the language of the Web page.
+The title attribute defines some extra information about an element.
+<pre></pre>---performatted text.
+text-align property defines the horizontal
+text alignment for an HTML element:
+subscript--text below normal line
+superscript--text above normal line.
+<address></address>--contact info of any article 
+<bdo></bdo>---(bi-directional override)--current text direction.
+<cite></cite>--element usually renders in italic.
+<abbr></abbr>-for abbreviations..
+<q> tag defines a short quotation.
+<blockquote> element defines a section that is quoted from another source.
+
+Html colors.
+rgx--red green blue--0 to255
+hgx--hexadecimal colors
+hsl--(hue,saturation,lightness).hue is degree of color wheel.
+saturation means intensity
+lightness means how much light colour you want to give.
+hsla--(hue,sauration,lightness,alpha)--alpha parameter is the number 
+between 0(fully transparent)to 1(not transparent at all).
+
+css stands for cascading style sheets.
+Html links.
+Html links are hyperlinks--u can click on a link and jump to another document.
+the target attribute--it has following values...
+1._self--default.open the document in the same window/tab as it was clicked.
+2._blank-open the document in a new window or tab.
+3._parent--open the document in the parent frame
+4._top--open the document in the full body of the window.
+
+absolute url vs.relative urls.
+absolute---a full web address
+relative---a local link (a llink to a page within the same website)
+
+use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+
+eg. Here, an unvisited link will be green with no underline.
+A visited link will be pink with no underline. An active 
+link will be yellow and underlined. In addition, 
+when mousing over a link (a:hover) it will become red and underlined:
+
+Use the id attribute (id="value") to define bookmarks in a page
+Use the href attribute (href="#value") to link to the bookmark -->
+
+<!-- The <img> tag has two required attributes:
+1.src - Specifies the path to the image
+2.alt - Specifies an alternate text for the image -->
+
+<!-- Use the HTML <img> element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+Use the CSS float property to let the image float to the left or to the right -->
+
+<!-- Use the HTML <map> element to define an image map
+    Use the HTML <area> element to define the clickable areas in the image map
+    Use the HTML usemap attribute of the <img> element to point to an image map -->
+
+<style>
+    body {
+        background-image: url('img_girl.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-size: cover;
+    }
+</style>
+
+There are two main purposes for the <picture> element:
+
+1. Bandwidth
+If you have a small screen or device,
+it is not necessary to load a large image file. 
+The browser will use the first <source> element 
+with matching attribute values,
+and ignore any of the following elements.
+            
+2. Format Support
+Some browsers or devices may not support all image 
+formats. By using the <picture> element, you can add
+images of all formats, and the browser will use
+the first format it recognizes, and ignore any
+of the following elements. 
+<!--favicon-- A favicon is a small image displayed next to the page title in the browser tab. -->
+<!-- title-- Every web page should have a page title to describe the meaning of the page.
+it defines the title of the document.. -->
+
+<table>	Defines a table
+    <th>	Defines a header cell in a table
+    <tr>	Defines a row in a table
+    <td>	Defines a cell in a table
+    <caption>	Defines a table caption
+    <colgroup>	Specifies a group of one or more columns in a table for formatting
+    <col>	Specifies column properties for each column within a <colgroup> element
+    <thead>	Groups the header content in a table
+    <tbody>	Groups the body content in a table
+    <tfoot>	Groups the footer content in a table -->
+
+    rowspan--  To make a cell span over multiple rows, use the rowspan attribute:
+
+    colspan--To make a cell span over multiple columns, use the colspan attribute: 
+
+    The <colgroup> element should be used as a container for the column specifications.
+
+    Each group is specified with a <col> element.
+        
+    The span attribute specifies how many columns that get the style.
+        
+    The style attribute specifies the style to give the columns.
+
+
+HTML lists allow web developers to group a set of related items in lists.
+
+1.unordered html lists.
+2.ordered html lists.
+3.html description lists.
+
+Tag	Description
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list.
+
+<!-- Use the HTML <ul> element to define an unordered list
+Use the CSS list-style-type property to define the list item marker
+Use the HTML <li> element to define a list item Lists can be nested List items can contain other HTML elements Use the CSS property float:left to display a list horizontally -->
+
+<!-- Use the HTML <dl> element to define a description list
+Use the HTML <dt> element to define the description term
+Use the HTML <dd> element to describe the term in a description list -->
+
+<!-- A block-level element always starts on a new line and takes up the full width available
+An inline element does not start on a new line and it only takes up as much width as necessary
+The <div> element is a block-level and is often used as a container for other HTML elements
+The <span> element is an inline container used to mark up a part of a text, or a part of a document -->
+
+
+<!-- Here are the inline elements in HTML:
+
+<a> <abbr> <acronym> <b>  <bdo> <big>
+<br> <button> <cite> <code> <dfn> <em>
+<i> <img> <input> <kbd> <label> <map> <object> 
+<output> <q> <samp> <script> <select> <small>
+<span> <strong> <sub> <sup> <textarea> <time> <tt> <var> -->
+
+<!-- The <div> element is used as a container for other HTML elements -->
+<!-- in html div foat:left and display :flex will align item horizontally side by side -->
+<!-- display:inline-block will also show side by side element.
+by using grid--
+like dispaly:grid and grid-template-columns:20% 40% 40%
+
+like this -->
+
+<!-- HTML Classes--The HTML class attribute is used to specify a class for an HTML element. -->
+<!-- The HTML class attribute specifies one or more class names for an element
+Classes are used by CSS and JavaScript to select and access specific elements
+The class attribute can be used on any HTML element
+The class name is case sensitive
+Different HTML elements can point to the same class name
+JavaScript can access elements with a specific class name with the getElementsByClassName() method -->
+
+ Difference Between Class and ID
+A class name can be used by multiple HTML elements,
+ while an id name must only be used by one HTML element 
+ within the page: 
+
+ The HTML <iframe> tag specifies an inline frame
+    The src attribute defines the URL of the page to embed
+    Always include a title attribute (for screen readers)
+    The height and width attributes specify the size of the iframe
+    Use border:none; to remove the border around the iframe 
+
+<!-- HTML JavaScript -->
+<!-- JavaScript makes HTML pages more dynamic and interactive. -->
